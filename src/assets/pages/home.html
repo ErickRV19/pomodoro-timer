@@ -22,16 +22,12 @@
         </div>
     </header>
 
-    <div class="container">
-
-    </div>
-
     <div class="navigation">
         <div class="mdc-tab-bar-variant" role="tablist">
             <div class="mdc-tab-scroller">
                 <div class="mdc-tab-scroller__scroll-area">
                     <div class="mdc-tab-scroller__scroll-content">
-                        <button class="mdc-tab mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                        <button id="home" class="mdc-tab mdc-tab" role="tab" aria-selected="true" tabindex="0">
                     <span class="mdc-tab__content">
                       <span class="mdc-tab__icon material-icons" aria-hidden="true">home</span>
                       <span class="mdc-tab__text-label">Home</span>
@@ -39,10 +35,10 @@
                     <span class="mdc-tab-indicator mdc-tab-indicator">
                       <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
                     </span>
-                    <span class="mdc-tab__ripple"></span>
-                  </button>
-                        <button class="mdc-tab mdc-tab" role="tab" aria-selected="true" tabindex="1">
-                    <span class="mdc-tab__content">
+                    <span class="mdc-tab__ripple"></span>            
+                </button>
+                        <button id="pomodoro" class="mdc-tab mdc-tab" role="tab" aria-selected="true" tabindex="1">
+                      <span class="mdc-tab__content">
                       <span class="mdc-tab__icon material-icons" ">alarm_on</span>
                       <span class="mdc-tab__text-label">Pomodoro</span>
                     </span>
@@ -50,25 +46,41 @@
                       <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
                     </span>
                     <span class="mdc-tab__ripple"></span>
-                  </button>
-
+                </button>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
+
+    <div class="container">
+        <div class="title">
+            <p> Pomodoro Timer</p>
+        </div>
+        <div class="timer">
+            <center>
+                <img src="/src/assets/images/manzana.png" alt="manzana" srcset="">
+            </center>
+            <p id="reloj">aqui ira el time</p>
+            <div class="iconos">
+
+                <img id="icon-play" src="/src/assets/images/icon-play.png" alt="play" srcset="">
+                <img id="icon-next" src="/src/assets/images/icon-next.png" alt="next" srcset="">
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <h2>Pomodoro timer</h2>
-        <h2>Reloj</h2>
-        <h2>hola</h2>
-        <h2></h2>
-        <h2>hola</h2>
+
+        <div class="questions">
+            <h6> ¿ Quieres saber que es la tecnica de pomodoro ?
+                <p>
+                    entra en la pestaña de pomodoro
+                </p>
+            </h6>
+        </div>
     </footer>
-
-
-
-
 
     <script src="/src/assets/js/app.js"></script>
 </body>
